@@ -475,6 +475,10 @@ body.lock {
   text-decoration: none;
 }
 
+.slider-block__link--mobile {
+  display: none;
+}
+
 .slider-block__arrow-block {
   position: absolute;
   top: 0;
@@ -756,18 +760,12 @@ body.lock {
   }
 
   .slider-block__link {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 17px;
-    text-align: center;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
-    color: #FFFFFF;
-    opacity: 0.7;
+    display: none;
+  }
+
+  .slider-block__link--mobile {
     display: block;
+    position: relative;
   }
 
   .slider-block .swiper-button-prev {
