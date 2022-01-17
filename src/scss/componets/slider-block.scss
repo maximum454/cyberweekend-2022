@@ -114,11 +114,27 @@
 	&__body{
 	}
 	&__icon{
-		width: 5px;
-		height: 8px;
-		background-image: url("../img/arrow_see_all_right.svg");
+		width: 19px;
+		height: 24px;
+		background-image: url("../img/more_items_arrows.svg");
 		display: inline-block;
-		margin-left: 5px;
+		margin-right: 5px;
+		vertical-align: middle;
+	}
+	&__btn{
+		background: #0BB3D8;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 21px;
+		text-align: center;
+		color: #fff;
+		padding: 16px 29px 13px 29px;
+		border: none;
+		border-bottom: #0889A6 solid 3px;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		margin: 80px auto 0;
 	}
 	.swiper-wrapper{
 		padding: 15px 0;
@@ -178,20 +194,24 @@
 		opacity: .5;
 	}
 	.swiper-button-prev{
-		background-image: url("../img/swiper-button-prev.svg");
+		background-image: url("../img/slider-arrow-prev.svg");
 		background-repeat: no-repeat;
 		background-position: center;
-		width: 13px;
-		height: 21px;
-		background-color: #000;
+		width: 41px;
+		height: 64px;
+		opacity: 1;
+		left: 0;
 	}
 	.swiper-button-next{
-		background-image: url("../img/swiper-button-next.svg");
+		background-image: url("../img/slider-arrow-next.svg");
 		background-repeat: no-repeat;
 		background-position: center;
-		width: 13px;
-		height: 21px;
-		background-color: #000;
+		width: 41px;
+		height: 64px;
+		right: 0;
+	}
+	.swiper-button-disabled{
+		opacity: .5;
 	}
 
 	.swiper-button-next:after{

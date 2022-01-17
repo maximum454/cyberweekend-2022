@@ -62,16 +62,22 @@
 		grid-gap: 30px;
 		justify-content: space-between;
 		position: relative;
+
+	}
+	&__decor{
+		position: absolute;
+		bottom: 0;
+		left: 0;
 		&:after{
 			content: '';
 			position: absolute;
 			bottom: -170px;
-			left: 150px;
-			background-image: url("../img/back_element_4.svg");
+			left: 0;
+			background-image: url("../img/triangle_back.png");
 			background-size: 100%;
 			background-repeat: no-repeat;
-			width: 46px;
-			height: 51px;
+			width: 171px;
+			height: 297px;
 		}
 	}
 	&__item{

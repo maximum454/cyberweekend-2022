@@ -28,7 +28,6 @@ body.lock {
 }
 
 .main {
-  background-color: #000 !important;
   font-family: 'PT Sans', sans-serif;
   background-position: top center;
   background-repeat: repeat;
@@ -232,16 +231,22 @@ body.lock {
   position: relative;
 }
 
-.all-block__body:after {
+.all-block__decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.all-block__decor:after {
   content: '';
   position: absolute;
   bottom: -170px;
-  left: 150px;
-  background-image: url("../img/back_element_4.svg");
+  left: 0;
+  background-image: url("../img/triangle_back.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 46px;
-  height: 51px;
+  width: 171px;
+  height: 297px;
 }
 
 .all-block__item {
@@ -470,11 +475,32 @@ body.lock {
 }
 
 .slider-block__icon {
-  width: 5px;
-  height: 8px;
-  background-image: url("../img/arrow_see_all_right.svg");
+  width: 19px;
+  height: 24px;
+  background-image: url("../img/more_items_arrows.svg");
   display: inline-block;
-  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.slider-block__btn {
+  background: #0BB3D8;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  padding: 16px 29px 13px 29px;
+  border: none;
+  border-bottom: #0889A6 solid 3px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px auto 0;
 }
 
 .slider-block .swiper-wrapper {
@@ -543,21 +569,26 @@ body.lock {
 }
 
 .slider-block .swiper-button-prev {
-  background-image: url("../img/swiper-button-prev.svg");
+  background-image: url("../img/slider-arrow-prev.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 13px;
-  height: 21px;
-  background-color: #000;
+  width: 41px;
+  height: 64px;
+  opacity: 1;
+  left: 0;
 }
 
 .slider-block .swiper-button-next {
-  background-image: url("../img/swiper-button-next.svg");
+  background-image: url("../img/slider-arrow-next.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 13px;
-  height: 21px;
-  background-color: #000;
+  width: 41px;
+  height: 64px;
+  right: 0;
+}
+
+.slider-block .swiper-button-disabled {
+  opacity: .5;
 }
 
 .slider-block .swiper-button-next:after {

@@ -19,7 +19,7 @@ $(function () {
     $('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
 })
 
-const swiperBlackFriday2021 = new Swiper('.swiper-block', {
+const swiperBlock = new Swiper('.swiper-block', {
     slidesPerView: 5,
     spaceBetween: 0,
     pagination: {
