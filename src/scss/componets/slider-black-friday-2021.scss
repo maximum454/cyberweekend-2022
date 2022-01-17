@@ -1,0 +1,235 @@
+.slider-black-friday-2021{
+	margin-bottom: 60px;
+	position: relative;
+	&.decor1{
+		&:after{
+			content: '';
+			position: absolute;
+			top: 8px;
+			background-image: url("../img/all_hits_back.svg");
+			background-position: center right;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			height: 100%;
+			width: 104%;
+			left: -30px;
+			pointer-events: none;
+			z-index: -1;
+		}
+	}
+	&.decor2{
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			background-image: url("../img/back_element_1.svg");
+			background-position: center right;
+			background-size: 22px 44px;
+			background-repeat: no-repeat;
+			height: 44px;
+			width: 100vw;
+			left: 50%;
+			transform: translate(-50%, 0);
+			pointer-events: none;
+		}
+	}
+	&.decor3{
+		&:after{
+			content: '';
+			position: absolute;
+			top: -50px;
+			background-image: url("../img/back_element_2.svg");
+			background-position: center left;
+			background-size: 73px 64px;
+			background-repeat: no-repeat;
+			height: 64px;
+			width: 100vw;
+			left: 50%;
+			transform: translate(-50%, 0);
+			pointer-events: none;
+		}
+	}
+	&.decor4{
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 50px;
+			right: -38px;
+			background-image: url("../img/back_element_3.svg");
+			background-position: center left;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			height: 46px;
+			width: 50px;
+			pointer-events: none;
+		}
+	}
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 38px;
+		line-height: 49px;
+		text-align: center;
+		margin-bottom: 20px;
+		color: #fff;
+		span{
+			color: #E84C0A;
+		}
+	}
+	&__link{
+		position: absolute;
+		bottom: 30px;
+		right: 0;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 17px;
+		text-align: center;
+		text-decoration-line: underline;
+		color: #FFFFFF;
+		opacity: 0.7;
+		display: block;
+		z-index: 1;
+	}
+	&__arrow-block{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	&__body{
+		margin-top: -60px;
+	}
+	.swiper-black-friday-2021{
+		padding-top: 60px;
+	}
+	.swiper-wrapper{
+		padding: 15px 0;
+	}
+	.swiper-slide {
+		background-color: #fff;
+		padding: 10px;
+		text-decoration: none;
+		height: auto;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+		p{
+			font-size: 18px;
+			line-height: 23px;
+			color: #000;
+			margin: 0;
+		}
+	}
+	.catalog-card__header{
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			background-image: url("../img/label-black-friday.svg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+			width: 93px;
+			height: 43px;
+			z-index: 2;
+		}
+	}
+	.black_friday_label {
+
+	}
+
+	.swiper-collection-button-prev,
+	.swiper-collection-button-next{
+		position: absolute;
+		top: calc(50% - 30px);
+		transform: translate(0,-50%);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+	}
+	.swiper-button-disabled{
+		opacity: .5;
+	}
+	.swiper-button-prev{
+		background-image: url("../img/swiper-button-prev.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 13px;
+		height: 21px;
+		background-color: #000;
+		top: 0;
+		margin-top: 0;
+		right: 40px;
+		left: auto;
+	}
+	.swiper-button-next{
+		background-image: url("../img/swiper-button-next.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 13px;
+		height: 21px;
+		background-color: #000;
+		top: 0;
+		margin-top: 0;
+	}
+
+	.swiper-button-next:after{
+		display: none;
+	}
+	.swiper-button-prev:after {
+		display: none;
+	}
+
+	.swiper-pagination {
+		position: relative;
+		bottom: 0;
+		margin: 20px auto;
+	}
+	.swiper-pagination-bullet{
+		background-color: #fff;
+		vertical-align: middle;
+		opacity: .4;
+	}
+	.swiper-pagination-bullet-active{
+		background-color: #FD7400;
+		width: 10px;
+		height: 10px;
+		opacity: 1;
+	}
+	@include r(767){
+		&__title {
+			font-size: 24px;
+			line-height: 31px;
+			a {
+				display: none;
+			}
+		}
+		&__link{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 17px;
+			text-align: center;
+			text-decoration-line: underline;
+			color: #FFFFFF;
+			opacity: 0.7;
+			display: block;
+		}
+		.swiper-button-prev{
+			display: none;
+		}
+		.swiper-button-next{
+			display: none;
+		}
+	}
+}

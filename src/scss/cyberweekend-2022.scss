@@ -1,0 +1,90 @@
+@import "mixin";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+
+	&.lock {
+		overflow: hidden;
+	}
+}
+.page-title,
+.breadcrumb{
+	display: none;
+}
+
+.main{
+	background-color: #000!important;
+	font-family: 'PT Sans', sans-serif;
+	background-position: top center;
+	background-repeat: repeat;
+	background-size: contain;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.wrp {
+	position: relative;
+	margin-top: -20px;
+	p {
+		font-size: 18px;
+		line-height: 26px;
+		color: #fff;
+	}
+	.modal{
+		p{
+			color: #000;
+		}
+	}
+}
+
+.container {
+	max-width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+
+.d-none {
+	display: none!important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+
+@import "componets/header-banner";
+@import "componets/slider-black-friday-2021";
+@import "componets/conditions-black-friday-2021";
+@import "componets/all-black-friday-2021";
+
+

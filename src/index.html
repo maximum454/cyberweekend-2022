@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    @@include('./template/_meta.html')
+    <title>Черная пятница 2021</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/black-friday-2021.css">
+
+
+</head>
+
+<body style="background-color: #000">
+<div class="wrp">
+    <div class="container">
+        <div class="header-banner">
+            <img class="img-fluid d-mobile-none" src="./img/banner.jpg" width="1920" height="520" alt="">
+            <div class="header-banner__img-mobile d-desktop-none">
+                <img class="img-fluid" src="./img/banner_mobile.jpg" width="992" height="400" alt="">
+            </div>
+            <div class="header-banner__text">
+                <img class="img-fluid" src="./img/text.png" width="661" height="479" alt="">
+            </div>
+        </div>
+
+        <div id="conditions-scroll" class="conditions-black-friday-2021">
+            <div class="conditions-black-friday-2021__body">
+                <div class="conditions-black-friday-2021__item">
+                    <div class="conditions-black-friday-2021__date">25-28 <span>ноября</span></div>
+                    <div class="conditions-black-friday-2021__name">В интернет-магазине</div>
+                    <div class="conditions-black-friday-2021__discount">скидки до <span>-60%</span></div>
+                    <p>Товары с гарантированной скидкой 30%, участвующие в акции, отмечены специальным значком "Черная
+                        пятница".
+                        Товары со скидками до 60% указаны на текущей странице
+                        в отдельном блоке и обновляются ежедневно.</p>
+                </div>
+                <div class="conditions-black-friday-2021__item">
+                    <div class="conditions-black-friday-2021__date">26 <span>ноября</span></div>
+                    <div class="conditions-black-friday-2021__name">В розничных магазинах</div>
+                    <div class="conditions-black-friday-2021__discount">скидки <span>-30%</span></div>
+                    <p>Скидка распространяется на все товары с белыми ценниками,
+                        кроме телевизоров и ёлок.</p>
+                </div>
+            </div>
+            <button class="conditions-black-friday-2021__btn" data-toggle="modal" data-target="#conditions-black-friday-2021">Подробнее об акции</button>
+
+            <div class="modal" tabindex="-1" role="dialog" id="conditions-black-friday-2021">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Самая крупная распродажа года стартует в «Галамарт»! В магазинах 30% будет действовать 26 ноября на товары с белыми ценниками, а на сайте товары со скидкой 30%, которые будут отмечены специальным значком «Черная пятница», можно будет купить с 25 по 28 ноября. Также в эти дни на сайте можно будет приобрести товары-хиты со скидкой до 60%. Следите за изменениями и не упустите шанс выгодной покупки!
+                            </p>
+                            <p><b>Условия акции:</b></p>
+                            <ul>
+                                <li>В интернет-магазине galamart.ru акция «Чёрная пятница» проходит с 25.11.2021 по 28.11.2021 включительно. Скидка 30% автоматически применена к ассортименту товаров, участвующему в акции: такие товары отмечены специальным значком «Чёрная пятница» (товары со скидками и специальными значками отобразятся в день старта акции). Товары со скидками до 60% можно посмотреть на странице акции в отдельном блоке «Все хиты со скидками до 60%», ассортимент товаров обновляется ежедневно.
+                                </li>
+                                <li>В розничных магазинах «Галамарт» акция «Чёрная пятница» проходит 26.11.2020. Скидка 30% действует на товары с белыми ценниками (товары, не участвующие в других акциях).
+                                </li>
+                                <li>Акция не распространяется на телевизоры, искусственные ели, а также товары, участвующие в других акциях.
+                                </li>
+                                <li>Акции, скидки и промокоды не суммируются. Количество товаров ограничено, акция действительна при условии наличия товаров.
+                                </li>
+                                <li>Цены на товары в розничных магазинах могут отличаться от цен, указанных на сайте.
+                                </li>
+                                <li>Акция действует во всех городах.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-black-friday-2021 decor1">
+            <div class="slider-black-friday-2021__title"><span>Все хиты</span> со скидками до 60%</div>
+            <div class="slider-black-friday-2021__body">
+                <div class="swiper swiper-black-friday-2021">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <a class="slider-black-friday-2021__link" href="#">Смотреть все</a>
+            </div>
+
+        </div>
+
+        <div class="slider-black-friday-2021 decor2">
+            <div class="slider-black-friday-2021__title"><span>Скидки</span> на посуду</div>
+            <div class="slider-black-friday-2021__body">
+                <div class="swiper swiper-black-friday-2021">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slider-black-friday-2021">
+            <div class="slider-black-friday-2021__title"><span>Скидки</span> на хозтовары</div>
+            <div class="slider-black-friday-2021__body">
+                <div class="swiper swiper-black-friday-2021">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slider-black-friday-2021">
+            <div class="slider-black-friday-2021__title"><span>Скидки</span> на бытовую технику</div>
+            <div class="slider-black-friday-2021__body">
+                <div class="swiper swiper-black-friday-2021">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slider-black-friday-2021 decor3">
+            <div class="slider-black-friday-2021__title"><span>Скидки</span> на инструменты</div>
+            <div class="slider-black-friday-2021__body">
+                <div class="swiper swiper-black-friday-2021">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slider-black-friday-2021 decor4">
+            <div class="slider-black-friday-2021__title"><span>Скидки</span> на товары для детей</div>
+            <div class="slider-black-friday-2021__body">
+                <div class="swiper swiper-black-friday-2021">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delet.png" width="270" height="433" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="all-black-friday-2021">
+            <div class="all-black-friday-2021__title">Все товары со скидкой в <span>Чёрную пятницу</span></div>
+            <div class="all-black-friday-2021__body">
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-1.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Инструменты</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-2.png" width="150" height="150" alt="">
+                    </div>
+                    <p>ТВ и электроника</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-3.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Домашний текстиль</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-4.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Бытовая химия</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-5.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Спорт и отдых</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-6.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Авто</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-7.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Галантерея</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-8.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Туризм и рыбалка</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-9.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Подарки</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-10.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Сантехника</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-11.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Канцелярские товары</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-12.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Посуда</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-13.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Новогодние товары</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-14.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Бытовая техника</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-15.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Товары для детей</p>
+                </a>
+                <a href="#" class="all-black-friday-2021__item">
+                    <div class="all-black-friday-2021__img">
+                        <img class="img-fluid" src="img/catalog-16.png" width="150" height="150" alt="">
+                    </div>
+                    <p>Хозтовары</p>
+                </a>
+            </div>
+            <a href="https://galamart.ru/catalog/hit/" class="all-black-friday-2021__btn">Все товары со скидкой</a>
+        </div>
+    </div>
+</div>
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-countdown@2.2.0/dist/jquery.countdown.min.js"></script>
+<script src="js/cyberweekend-2022.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+</html>
