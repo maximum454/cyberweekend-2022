@@ -6,7 +6,7 @@
 
 body {
 
-
+	font-family: PT Sans;
 	&.lock {
 		overflow: hidden;
 	}
@@ -81,10 +81,9 @@ body {
 	height: auto;
 }
 
-
 @import "componets/header-banner";
+@import "componets/all-block";
 @import "componets/slider-black-friday-2021";
-@import "componets/conditions-black-friday-2021";
-@import "componets/all-black-friday-2021";
+
 
 

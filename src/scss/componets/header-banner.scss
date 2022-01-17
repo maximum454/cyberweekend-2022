@@ -1,148 +1,90 @@
 .header-banner {
 	padding: 20px 0;
-	margin-bottom: 60px;
-	&__count{
+	position: relative;
+	overflow: hidden;
+	&.bg{
+		background-image: url('../img/banner.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
 
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 68%;
+		background-image: url("../img/hand.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 531px;
+		height: 283px;
+		pointer-events: none;
 	}
 	&__img{
 		padding-left: 10px;
 	}
 	&__btn {
-		display: block;
 		text-align: center;
 		margin: 0 auto;
-		transition: all .3s ease;
+		display: block;
+		white-space: nowrap;
+		vertical-align: middle;
+		user-select: none;
+		border: 1px solid transparent;
+		padding: .563rem 1.4rem;
+		font-size: 16px;
+		line-height: 21px;
+		background-color: #0BB3D8;
+		border-radius: none;
+		cursor: pointer;
+		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		text-decoration: none;
+		font-style: normal;
+		font-weight: bold;
+		color: #FFFFFF;
 		&:hover {
 			opacity: .9;
 			transition: all .3s ease;
 		}
-	}
-	&__row {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		align-items: center;
-	}
-	&__name{
-		font-weight: bold;
-		font-size: 16px;
-		line-height: 21px;
-		text-align: center;
-		color: #FFFFFF;
-		opacity: 0.5;
-	}
-	&__count-block{
-		width: 394px;
-		margin-left: auto;
-		margin-right: 0;
-		position: relative;
-		&:before{
-			content: '';
-			position: absolute;
-			top: -50px;
-			left: -100px;
-			background-image: url("../img/counter_triangle.svg");
-			background-position: center;
-			background-size: 100%;
-			background-repeat: no-repeat;
-			width: 34px;
-			height: 31px;
-		}
-	}
-	&__arrow{
-		display: block;
-		text-decoration: none;
-		margin-left: auto;
-		margin-right: 0;
-		text-align: right;
 	}
 	img {
 		object-fit: cover;
 		max-width: 100%;
 		height: auto;
 	}
-
-	#clock{
-		font-weight: bold;
-		font-size: 103px;
-		line-height: 104px;
+	&__text{
 		text-align: center;
-		color: #FFFFFF;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		span{
-			font-style: normal;
-			font-weight: normal;
-			font-size: 50px;
-			line-height: 65px;
-			text-align: center;
-			color: #FFFFFF;
-			opacity: 0.5;
-			margin: 0 5px;
-		}
-		.sub-slog{
-			font-style: normal;
-			font-weight: normal;
-			font-size: 14px;
-			line-height: 18px;
-			text-align: center;
-			color: #FFFFFF;
-			opacity: 0.2;
-		}
+		margin-bottom: 73px;
+		position: relative;
+		z-index: 1;
 	}
-	&__img-mobile{
-		height: 400px;
-		margin: 0 -15px;
-		img{
-			height: 100% !important;
-		}
-	}
+
 	@include r(767){
-		&__row {
-			display: grid;
-			grid-template-columns: 1fr;
-			align-items: center;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 68%;
+			background-image: url("../img/hand.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 337px;
+			height: 180px;
+			pointer-events: none;
+		}
+		&__text{
+			text-align: center;
+			margin-bottom: 63px;
+			position: relative;
+			z-index: 1;
 		}
 		&__img{
 			padding-left: 0;
 			order: 1;
 			text-align: center;
-		}
-		&__count{
-			order: 2;
-		}
-		&__count-block{
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		&__arrow{
-			display: block;
-			text-decoration: none;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-			margin-top: 20px;
-		}
-		#clock{
-			font-weight: bold;
-			font-size: 60px;
-			line-height: 70px;
-			text-align: center;
-			color: #FFFFFF;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			span{
-				font-style: normal;
-				font-weight: normal;
-				font-size: 50px;
-				line-height: 65px;
-				text-align: center;
-				color: #FFFFFF;
-				opacity: 0.5;
-				margin: 0 5px;
-			}
 		}
 	}
 }
