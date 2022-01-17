@@ -24,7 +24,10 @@
 		position: absolute;
 		right: 0px;
 		top: 30%;
-		background: url("../img/plus_back.png") top left no-repeat;
+		background-image: url("../img/plus_back.png");
+		background-repeat: no-repeat;
+		background-position: top left;
+		background-size: 100%;
 		width: 200px;
 		height: 301px;
 	}
@@ -98,7 +101,10 @@
 		left: -23px;
 		width: 167px;
 		height: 123px;
-		background: url("../img/sale_back.png") top left no-repeat;
+		background-image: url("../img/sale_back.png");
+		background-size: 100%;
+		background-position: top left;
+		background-repeat: no-repeat;
 	}
 	&__value{
 		position: absolute;
@@ -126,6 +132,7 @@
 		max-width: 141px;
 		img{
 			max-width: 100%;
+			height: auto;
 		}
 	}
 	&__name{
@@ -168,6 +175,32 @@
 		vertical-align: middle;
 	}
 	@include r(767){
+		&__decor{
+			display: none;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: -50px;
+			left: 0;
+			background-image: url("../img/left.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 100px;
+			height: 121px;
+			pointer-events: none;
+			z-index: 1;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			right: 50%;
+			top: auto;
+			bottom: -50px;
+			transform: translate(50%,0);
+			width: 140px;
+			height: 140px;
+		}
 		&__title {
 			font-size: 28px;
 			line-height: 32px;
@@ -175,12 +208,37 @@
 		&__body{
 			display: grid;
 			grid-template-columns:1fr 1fr;
+			grid-gap: 10px;
 		}
 		&__item{
-			p{
-				font-size: 13px;
-				line-height: 17px;
-			}
+			padding: 12px;
+		}
+		&__name{
+			font-size: 13px;
+			line-height: 17px;
+		}
+		&__label{
+			position: absolute;
+			top: -5px;
+			right: -10px;
+			max-width: 80px;
+		}
+		&__discount{
+			position: absolute;
+			top: -23px;
+			left: -23px;
+			width: 130px;
+			height: 73px;
+		}
+		&__value{
+			font-size: 13px;
+			line-height: 17px;
+			text-align: right;
+		}
+		&__btn{
+			font-size: 12px;
+			line-height: 16px;
+			padding: 10px 0;
 		}
 	}
 }

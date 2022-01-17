@@ -16,6 +16,11 @@ $(function () {
         $(this).addClass('d-none');
     })
 
+    $('.js-slider-add').on('click', function (){
+        $('.slider-block').removeClass('hidden');
+        $(this).addClass('d-none');
+    })
+
     $('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
 })
 

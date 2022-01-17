@@ -16,10 +16,15 @@ $(function () {
         $(this).addClass('d-none');
     })
 
+    $('.js-slider-add').on('click', function (){
+        $('.slider-block').removeClass('hidden');
+        $(this).addClass('d-none');
+    })
+
     $('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
 })
 
-const swiperBlackFriday2021 = new Swiper('.swiper-block', {
+const swiperBlock = new Swiper('.swiper-block', {
     slidesPerView: 5,
     spaceBetween: 0,
     pagination: {

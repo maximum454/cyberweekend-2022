@@ -114,9 +114,11 @@
 	&__body{
 	}
 	&__icon{
-		width: 19px;
-		height: 24px;
-		background-image: url("../img/more_items_arrows.svg");
+		width: 8px;
+		height: 5px;
+		background-image: url("../img/arrow-link.png");
+		background-repeat: no-repeat;
+		background-position: center;
 		display: inline-block;
 		margin-right: 5px;
 		vertical-align: middle;
@@ -135,6 +137,9 @@
 		display: flex;
 		align-items: center;
 		margin: 80px auto 0;
+	}
+	&.hidden{
+		display: none;
 	}
 	.swiper-wrapper{
 		padding: 15px 0;
@@ -165,12 +170,12 @@
 			top: 5px;
 			left: 50%;
 			transform: translate(-50%, 0);
-			background-image: url("../img/label-black-friday.svg");
+			background-image: url("../img/label_dark.png");
 			background-repeat: no-repeat;
 			background-size: 100%;
 			background-position: center;
-			width: 93px;
-			height: 43px;
+			width: 141px;
+			height: 56px;
 			z-index: 2;
 		}
 	}
