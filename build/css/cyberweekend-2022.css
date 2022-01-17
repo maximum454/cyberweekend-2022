@@ -173,6 +173,9 @@ body.lock {
   margin-bottom: 80px;
   background-color: #141F3F;
   position: relative;
+  background-image: url("../img/dark-back.jpg");
+  background-position: top center;
+  background-size: cover;
 }
 
 .all-block:before {
@@ -187,6 +190,16 @@ body.lock {
   height: 431px;
   pointer-events: none;
   z-index: 1;
+}
+
+.all-block:after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 30%;
+  background: url("../img/plus_back.png") top left no-repeat;
+  width: 200px;
+  height: 301px;
 }
 
 .all-block__title {
@@ -222,7 +235,7 @@ body.lock {
 }
 
 .all-block__body {
-  margin: auto;
+  margin: 0 auto 36px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
   grid-gap: 30px;
