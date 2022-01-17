@@ -256,6 +256,10 @@ body.lock {
   position: relative;
 }
 
+.all-block__item.hidden {
+  display: none;
+}
+
 .all-block__discount {
   position: absolute;
   top: -23px;
@@ -330,6 +334,7 @@ body.lock {
   text-align: center;
   -webkit-text-decoration: dotted;
           text-decoration: dotted;
+  cursor: pointer;
 }
 
 .all-block__icon {

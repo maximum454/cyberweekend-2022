@@ -82,6 +82,9 @@
 		transition: color .3s ease;
 		border: 2px solid rgba(255, 255, 255, 0.1);
 		position: relative;
+		&.hidden{
+			display: none;
+		}
 	}
 	&__discount{
 		position: absolute;
@@ -147,6 +150,7 @@
 			border: none;
 			text-align: center;
 			text-decoration: dotted;
+			cursor: pointer;
 		}
 	}
 	&__icon{

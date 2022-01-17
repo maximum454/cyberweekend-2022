@@ -11,6 +11,11 @@ $(function () {
         $('html, body').animate({scrollTop: dn}, 1000);
     });
 
+    $('.js-all-more').on('click', function (){
+        $('.all-block__item').removeClass('hidden');
+        $(this).addClass('d-none');
+    })
+
     $('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
 })
 
