@@ -146,7 +146,16 @@
 			background-color: transparent;
 			border: none;
 			text-align: center;
+			text-decoration: dotted;
 		}
+	}
+	&__icon{
+		width: 9px;
+		height: 6px;
+		background-image: url("../img/more_arrow.svg");
+		display: inline-block;
+		margin-right: 5px;
+		vertical-align: middle;
 	}
 	@include r(767){
 		&__title {

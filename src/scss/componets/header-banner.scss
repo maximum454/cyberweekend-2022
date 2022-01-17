@@ -27,24 +27,18 @@
 		padding-left: 10px;
 	}
 	&__btn {
-		text-align: center;
-		margin: 0 auto;
 		display: block;
-		white-space: nowrap;
-		vertical-align: middle;
-		user-select: none;
-		border: 1px solid transparent;
-		padding: .563rem 1.4rem;
+		background: #0BB3D8;
+		font-weight: bold;
 		font-size: 16px;
 		line-height: 21px;
-		background-color: #0BB3D8;
-		border-radius: none;
-		cursor: pointer;
-		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		text-align: center;
+		color: #fff;
+		padding: 16px 29px 13px 29px;
+		border: none;
+		border-bottom: #0889A6 solid 3px;
 		text-decoration: none;
-		font-style: normal;
-		font-weight: bold;
-		color: #FFFFFF;
+		margin: auto;
 		&:hover {
 			opacity: .9;
 			transition: all .3s ease;
